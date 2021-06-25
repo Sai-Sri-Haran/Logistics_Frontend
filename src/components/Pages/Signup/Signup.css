@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Nixie+One&display=swap");
+.frm_reg_txt {
+  font-family: "Fredericka the Great", cursive;
+  color: #e74561;
+  text-align: center;
+}
+.form_reg {
+  margin: 0 auto;
+  float: none;
+}
+.card_reg-frm {
+  margin: 0 auto;
+  float: none;
+  margin-top: 5%;
+  padding: 3%;
+  background-color:#f8f8f8 !important;
+}
