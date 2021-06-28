@@ -19,7 +19,7 @@ function Signup() {
   };
   const onSubmitHandler = async (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:5000/api/v1/signup/`, { signupDetails })
+    axios.post(`https://logistics--backend.herokuapp.com/api/v1/signup/`, { signupDetails })
       .then(res => {
         console.log(res);
         console.log(res.data);

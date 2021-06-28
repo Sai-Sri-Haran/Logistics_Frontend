@@ -20,7 +20,7 @@ function LogisticsOrderList() {
       status: temporders[id],
     };
     axios
-      .post(`http://localhost:5000/api/v1/order`, { order_det })
+      .post(`https://logistics--backend.herokuapp.com/api/v1/order`, { order_det })
       .then((res) => {
         console.log(res);
         if (res.data.status === "SUCCESS") {
@@ -31,7 +31,7 @@ function LogisticsOrderList() {
       });
   };
   const onClickhandler = async (e) => {
-    axios.get(`http://localhost:5000/api/v1/vieworder/`).then((response) => {
+    axios.get(`https://logistics--backend.herokuapp.com/api/v1/vieworder/`).then((response) => {
       toast.info(response.data.message);
       localStorage.setItem("Order_details", JSON.stringify(response.data));
       console.log(orderlist.data);
