@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <title>Dash Logistics</title>
         <Switch>
           <Route exact path="/" component={Navwbar}></Route>
           <Route exact path="/login" component={Login}></Route>
